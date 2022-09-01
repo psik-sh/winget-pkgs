@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.1.0.schema.json
+
+PackageIdentifier: AntibodySoftware.WizTree
+PackageVersion: "4.10"
+MinimumOSVersion: 10.0.0.0
+InstallerType: inno
+Scope: machine
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+InstallerSwitches:
+  Custom: /NORESTART
+UpgradeBehavior: install
+AppsAndFeaturesEntries:
+  - DisplayName: WizTree v4.10
+ReleaseDate: 2022-08-29
+Installers:
+- Architecture: neutral
+  InstallerUrl: https://diskanalyzer.com/files/wiztree_4_10_setup.exe
+  InstallerSha256: 66F3549750A74F60F42DC89F7A6C1CF826D727B193C46EB719DD30627A3012A4
+ManifestType: installer
+ManifestVersion: 1.1.0
